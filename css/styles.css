@@ -1,0 +1,50 @@
+
+
+.banner-img {
+  width: 100%;         /* Full viewport width */
+  height: auto;         /* Maintain aspect ratio */
+  display: block;       /* Remove inline spacing */
+  object-fit: contain;    /* Crop excess if needed */
+}
+
+/* Desktop-specific height limit */
+@media (min-width: 768px) {
+  .banner-img {
+    max-height: 300px;
+    width: 100%;
+  }
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h2 {
+  margin-top: 2rem;
+}
+
+#contact-info i {
+  color: #1877f2; /* Facebook blue */
+}
+#contact-info a {
+  color: #000;
+}
+
+#contact-info i {
+  vertical-align: middle;
+}
+
+#contact-info a[href^="tel"] {
+  color: #0d6efd; /* Bootstrap primary blue */
+  font-weight: 500;
+}
+
+#contact-info a[href^="mailto"] {
+  color: #d63384; /* Bootstrap pink */
+  font-weight: 500;
+}
+
+#contact-info a[href*="facebook.com"] {
+  color: #1877f2; /* Facebook blue */
+  font-weight: 500;
+}

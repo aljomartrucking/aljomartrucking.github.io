@@ -92,7 +92,7 @@ h2 {
     height: 700px;
   }
 
-  .carousel-indicators {
+  /* .carousel-indicators {
     bottom: 10px;
     gap: 6px;
   }
@@ -105,7 +105,7 @@ h2 {
   .fixed-carousel .carousel-control-prev,
   .fixed-carousel .carousel-control-next {
     width: 15%;
-  }
+  } */
 }
 
 
@@ -133,7 +133,7 @@ h2 {
 }
 
 #contact-info a[href^="mailto"] {
-  color: #d63384; /* Bootstrap pink */
+  color: #0d6efd; /* Bootstrap pink */
   font-weight: 500;
 }
 

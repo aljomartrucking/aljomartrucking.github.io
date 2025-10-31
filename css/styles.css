@@ -1,0 +1,146 @@
+
+
+.banner-img {
+  width: 100%;         /* Full viewport width */
+  height: auto;         /* Maintain aspect ratio */
+  display: block;       /* Remove inline spacing */
+  object-fit: contain;    /* Crop excess if needed */
+}
+
+/* Desktop-specific height limit */
+@media (min-width: 768px) {
+  .banner-img {
+    max-height: 300px;
+    width: 100%;
+  }
+}
+
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px;
+}
+
+/* Webpage Body */
+body {
+  padding-top: 50px; /* adjust depending on your navbar height */
+  background-color: #f3f4f6;
+  /* background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'); */
+  background-image: url('../images/Backgrounds/asfalt-dark.png'); 
+  background-repeat: repeat;          /* good for small texture patterns */
+  background-size: auto;              /* or "cover" for full-screen image */
+  background-attachment: fixed;       /* makes it stay still on scroll */
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+
+
+h2 {
+  margin-top: 2rem;
+}
+
+/* Fixed height carousel container */
+.fixed-carousel {
+  height: 800px; /* adjust as you like */
+  overflow: hidden;
+  border: 3px solid #ccc; /* 👈 light gray border */
+  border-radius: 10px; /* smooth rounded edges */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  background-color: #000; /* helps fill background during transitions */
+}
+
+/* Ensure each carousel item fills the height */
+.fixed-carousel .carousel-item {
+  height: 100%;
+}
+
+/* Make images fill and crop correctly */
+.fixed-carousel .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ensures fill and crop without stretching */
+}
+
+/* Move dots below the carousel */
+.fixed-carousel .carousel-indicators {
+  position: static;
+  margin-top: 15px;
+}
+
+/* Customize dots style */
+.fixed-carousel .carousel-indicators [data-bs-target] {
+  background-color: #555; /* normal color */
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.fixed-carousel .carousel-indicators .active {
+  background-color: #007bff; /* active color */
+}
+
+
+/* Carousel Arrows */
+.fixed-carousel .carousel-control-prev,
+.fixed-carousel .carousel-control-next {
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: auto;
+  width: 10%;
+  background-color: rgba(0, 0, 0, 0.3); /* Optional: semi-transparent background */
+  border-radius: 50%;
+}
+
+.fixed-carousel .carousel-control-prev-icon,
+.fixed-carousel .carousel-control-next-icon {
+  filter: invert(1); /* Makes white icons visible on light backgrounds */
+}
+
+
+/* Caption text below dots */
+.carousel-caption-below {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  /* color: #007bff; */
+  font-weight: 600;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+  transition: opacity 0.4s ease;
+}
+
+
+@media (max-width: 768px) {
+  .col-md-6 {
+    min-height: 400px;
+  }
+}
+
+
+#contact-info i {
+  color: #1877f2; /* Facebook blue */
+}
+#contact-info a {
+  color: #000;
+}
+
+#contact-info i {
+  vertical-align: middle;
+}
+
+#contact-info a[href^="tel"] {
+  color: #0d6efd; /* Bootstrap primary blue */
+  font-weight: 500;
+}
+
+#contact-info a[href^="mailto"] {
+  color: #0d6efd; /* Bootstrap pink */
+  font-weight: 500;
+}
+
+#contact-info a[href*="facebook.com"] {
+  color: #1877f2; /* Facebook blue */
+  font-weight: 500;
+}

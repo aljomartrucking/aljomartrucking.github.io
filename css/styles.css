@@ -15,9 +15,28 @@
   }
 }
 
+/* Example CSS Using Local Image */
 body {
+  background-color: #f3f4f6;
+  background-image: url('images/background-texture.png');
+  background-repeat: repeat;          /* good for small texture patterns */
+  background-size: auto;              /* or "cover" for full-screen image */
+  background-attachment: fixed;       /* makes it stay still on scroll */
+}
+
+
+body {
+  background-color: #f3f4f6;
+  /* background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'); */
+  background-image: url('../images/Backgrounds/asfalt-dark.png'); 
+  background-repeat: repeat;          /* good for small texture patterns */
+  background-size: auto;              /* or "cover" for full-screen image */
+  background-attachment: fixed;       /* makes it stay still on scroll */
   font-family: 'Segoe UI', sans-serif;
 }
+
+
+
 
 h2 {
   margin-top: 2rem;

@@ -82,6 +82,18 @@ h2 {
 }
 
 
+/* Caption text below dots */
+.carousel-caption-below {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  /* color: #007bff; */
+  font-weight: 600;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+  transition: opacity 0.4s ease;
+}
 
 
 @media (max-width: 768px) {
